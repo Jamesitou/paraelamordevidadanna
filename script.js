@@ -1,6 +1,3 @@
-<!-- En tu HTML (antes de cerrar el body): -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
   $(document).ready(function () {
     $('.no').click(function () {
       $('#f1').hide();
