@@ -1,107 +1,100 @@
-$(document).ready(function () {
-  function cambiar(idOcultar, idMostrar) {
-    $(idOcultar).hide();
-    $(idMostrar).css('display', 'flex');
-  }
-
-  $('.no').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f1', '#f2');
+$('.no').on("click", function(){ 
+  $('#f1').css('display', 'none');
+  $('#f2').css('display', 'flex');  
   });
 
-  $('.weno').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f2', '#f1');
+  $('.weno').on("click", function(){ 
+  $('#f2').css('display', 'none');
+  $('#f1').css('display', 'flex');  
   });
 
-  $('.si').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f1', '#f3');
+  $('.si').on("click", function(){ 
+  $('#f1').css('display', 'none');
+  $('#f3').css('display', 'flex');  
   });
 
-  $('.dale').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f3', '#f4');
+  $('.dale').on("click", function(){ 
+  $('#f3').css('display', 'none');
+  $('#f4').css('display', 'flex');  
   });
 
-  $('.rega').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f4', '#f5');
+  $('.rega').on("click", function(){ 
+  $('#f4').css('display', 'none');
+  $('#f5').css('display', 'flex');  
   });
 
-  $('.ojo').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f5', '#f6');
+  $('.ojo').on("click", function(){ 
+  $('#f5').css('display', 'none');
+  $('#f6').css('display', 'flex');  
   });
 
-  $('.afi').on("touchstart click", function(e){ 
-    e.preventDefault();
-    $('#f6').hide();
-    $('#f7, #f8').css('display', 'flex');
+$('.ojo').on("click", function(){ 
+  $('#f5').css('display', 'none');
+  $('#f6').css('display', 'flex');  
   });
 
-  $('.salu').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f8', '#f9');
+$('.afi').on("click", function(){ 
+  $('#f6').css('display', 'none');
+  $('#f7').css('display', 'flex');
+    $('#f8').css('display', 'flex');  
   });
 
-  $('.copy').on("touchstart click", function(e){ 
-    e.preventDefault();
-    $('#f9').hide();
-    $('#f10, #f11').css('display', 'flex');
+$('.salu').on("click", function(){ 
+  $('#f8').css('display', 'none');
+  $('#f9').css('display', 'flex');  
   });
 
-  $('span.go').on("touchstart click", function(e){ 
-    e.preventDefault();
-    $('#f13').hide();
-    $('#f14').css('display', 'block');
+$('.copy').on("click", function(){ 
+  $('#f9').css('display', 'none');
+  $('#f10').css('display', 'flex');          $('#f11').css('display', 'flex');
   });
 
-  $('.ca1').on("touchstart click", function(e){ 
-    e.preventDefault();
-    $('#f12').css('display', 'flex');
-    $('#f13').css('display', 'block');
+$('span.go').on("click", function(){ 
+  $('#f13').css('display', 'none');
+  $('#f14').css('display', 'block');   
   });
 
-  $('.ca3').on("touchstart click", function(e){ 
-    e.preventDefault();
-    $('#f15').css('display', 'block');
-    $('#f16').css('display', 'flex');
+$('.ca1').on("click", function(){ 
+  $('#f12').css('display', 'flex'); 
+  $('#f13').css('display', 'block'); 
   });
 
-  $('.ca2').on("touchstart click", function(e){ 
-    e.preventDefault();
-    $('#f18').css('display', 'block');
-    $('#f19').css('display', 'flex');
+$('.ca3').on("click", function(){ 
+  $('#f15').css('display', 'block'); 
+  $('#f16').css('display', 'flex'); 
   });
 
-  $('.carta').on("touchstart click", function(e){ 
-    e.preventDefault();
-    $('#f12').hide();
+$('.ca2').on("click", function(){ 
+  $('#f18').css('display', 'block'); 
+  $('#f19').css('display', 'flex'); 
   });
 
-  $('.anillo').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f16', '#f17');
+$('.carta').on("click", function(){ 
+  $('#f12').css('display', 'none'); 
+  });
+ 
+$('.anillo').on("click", function(){ 
+  $('#f16').css('display', 'none');
+   $('#f17').css('display', 'flex');
+  
   });
 
-  $('.marry').on("touchstart click", function(e){ 
-    e.preventDefault();
-    $('#f15, #f17').hide();
+$('.marry').on("click", function(){ 
+  $('#f15').css('display', 'none');
+  $('#f17').css('display', 'none');
+  });
+ 
+$('.meme').on("click", function(){ 
+  $('#f19').css('display', 'none');
+  $('#f20').css('display', 'flex');
   });
 
-  $('.meme').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f19', '#f20');
+$('.meme2').on("click", function(){ 
+  $('#f20').css('display', 'none');
+  $('#f21').css('display', 'flex');
   });
 
-  $('.meme2').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f20', '#f21');
+$('.yes').on("click", function(){ 
+  $('#f21').css('display', 'none');
+  $('#f22').css('display', 'flex');
   });
-
-  $('.yes').on("touchstart click", function(e){ 
-    e.preventDefault();
-    cambiar('#f21', '#f22');
-  });
-});
